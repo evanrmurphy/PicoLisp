@@ -1,0 +1,14 @@
+#!bin/picolisp lib.l
+# 28sep07abu
+# (c) Software Lab. Alexander Burger
+
+(load "@lib/misc.l" "@lib/http.l")
+
+(raw T)
+(let *Dbg NIL
+   (client "localhost" (format (opt))
+      (pack "@psh?" (pw) "&" (in '("tty") (line T)))
+      (ctty (read))
+      (line)
+      (line) ) )
+(bye)

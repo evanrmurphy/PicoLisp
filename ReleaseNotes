@@ -1,0 +1,23 @@
+02dec10abu
+(c) Software Lab. Alexander Burger
+
+
+         Release Notes for picoLisp-3.0.5
+         ================================
+
+A. The 'pid' function was removed. This was announced in the previous version,
+   and in the mailing list in
+
+      http://www.mail-archive.com/picolisp@software-lab.de/msg01949.html
+
+B. "Ersatz PicoLisp" (written in Java) was included for a first evaluation. For
+   further informations, please look at "ersatz/README".
+
+C. The pre-generated "*.s" files for the 64-bit version are no longer part of
+   the release. They are rather large, and would multiply when further
+   architectures and operating systems are supported. Instead, they may
+   initially be generated with Ersatz PicoLisp, or downloaded from
+   "http://software-lab.de/x86-64.linux.tgz".
+
+D. The 'easter' function in "lib/cal.l" is no longer restricted to the years
+   1900 through 2099.

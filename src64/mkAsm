@@ -1,0 +1,11 @@
+#!/bin/sh
+# 17nov10abu
+
+if test -x ../bin/picolisp
+then
+   ../bin/picolisp ../lib.l @lib/misc.l mkAsm.l "$@"
+else
+   ../ersatz/picolisp mkAsm.l "$@"
+fi
+
+# vi:et:ts=3:sw=3
